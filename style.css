@@ -1,0 +1,70 @@
+.image {
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.entete p {
+  margin: 1rem 3rem;
+}
+
+.entete p::first-letter {
+  margin-left: 2rem;
+}
+
+.backNav {
+  background-color: #b1d2f3;
+}
+
+.footer {
+  background-color: #b1d2f3;
+  padding-bottom: 1rem;
+}
+
+.footer .copyright {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer .director {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+.footer .director img {
+  width: 4rem;
+  height: auto;
+}
+
+.footer .director a {
+  color: #ffee00;
+  text-shadow: 1px 1px 2px #000;
+  text-decoration: none;
+}
+
+.footer .director a:hover {
+  color: #f3e6db;
+}
+/*# sourceMappingURL=style.css.map */
