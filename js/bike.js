@@ -2,31 +2,31 @@ const bike = [
     {
         id: 1,
         alt: "vue interieure du magasin avec vélo et vélo electriques",
-        photo: "images/aigues_bike_velo _vente.jpg"
+        photo: "images/test1.jpg"
     },
     {
         id: 2,
         alt: "vue interieure du magasin avec velo à louer",
-        photo: "images/aigues_bike_velo.jpg"
+        photo: "images/test2.jpg"
     },
     {
         id: 3,
         alt: "vue interieure du magasin avec velo électriques",
-        photo: "images/aigues_bike_velo_electrique.jpg"
+        photo: "images/test3.jpg"
     },
     {
         id: 4,
         alt: "vue interieur du magasin avec quad",
-        photo: "images/aigues_bike_quad.jpg"
+        photo: "images/test4.jpg"
     },
     {
         id: 5,
         alt: "vue interieur du magasin avec les accessoires pour vélo",
-        photo: "images/aigues_bike_velo_accessoires.jpg"
+        photo: "images/test5.jpg"
     },
     {
         id: 6,
         alt: "vue extérieure du magasin",
-        photo: "images/aigues_bike.jpg"
+        photo: "images/test6.jpg"
     }
 ]

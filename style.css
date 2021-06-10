@@ -92,8 +92,8 @@
   border: transparent;
   margin: auto;
   overflow: hidden;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .btn_carousel {
@@ -190,6 +190,12 @@
   color: #f3e6db;
 }
 
+@media all and (min-width: 700px) {
+  .carousel {
+    max-height: 30rem;
+  }
+}
+
 @media all and (min-width: 850px) {
   .description_general {
     margin-left: 13%;
@@ -198,6 +204,16 @@
   .description_general p:nth-of-type(6) {
     font-weight: bold;
     text-align: center;
+  }
+  .carousel {
+    width: 85% !important;
+  }
+}
+
+@media all and (min-width: 1250px) {
+  .carousel {
+    max-height: 35rem;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -54,7 +54,7 @@ $main__color: rgb(76, 175, 79);
     border:transparent;
     margin:auto;
     overflow: hidden;
-    object-fit: contain;
+    object-fit: cover;
 }
 .btn_carousel{
     color: $main__color!important;
@@ -131,6 +131,12 @@ $main__color: rgb(76, 175, 79);
     }
 }
 
+@media all and (min-width: 700px){
+    .carousel{
+        max-height: 30rem;
+    }
+}
+
 @media all and (min-width: 850px){
     .description_general {
         margin-left: 13%;
@@ -139,5 +145,15 @@ $main__color: rgb(76, 175, 79);
             font-weight: bold;
             text-align:center;
         }
+    }
+    .carousel{
+        width: 85%!important;
+    }
+}
+
+@media all and (min-width: 1250px){
+    .carousel{
+        max-height: 35rem;
+        width:80%;
     }
 }
