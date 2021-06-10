@@ -1,23 +1,107 @@
-$background: #b1d2f3;
+$main__color: rgb(76, 175, 79);
 
-.image{
-    height: 15rem;
-    object-fit: cover;
-    margin:auto;
-    padding-bottom:2rem;
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg)
+    }
+    25%{
+        transform: rotate(180deg)
+    }
+    50%{
+        transform: rotate(360deg)
+    }
+    75%{
+        transform: rotate(180deg)
+    }
+    100%{
+        transform:rotate(0deg)
+    }
 }
-.entete p{
-    margin: 1rem 3rem;
+@keyframes appear{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+// navbar //
+.rotate{
+    animation: rotate 8s infinite ease-in-out;
+}
+
+.backNav{
+    background-color: $main__color;
+    font-weight: 700;
+}
+
+.phone {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.4rem;
+}
+
+//carrousel de photos//
+.carousel{
+    width: 90%!important;
+    max-height: 20rem;
+    border:transparent;
+    margin:auto;
+    overflow: hidden;
+    object-fit: contain;
+}
+.btn_carousel{
+    color: $main__color!important;
+}
+
+
+//texte//
+
+.description_general p{
+    margin: 1.5rem 4rem;
+    text-align: justify;
     &::first-letter{
         margin-left:2rem;
     }
-}
-.backNav{
-    background-color: $background;
+    & .color {
+        color: $main__color;
+       margin-left: 4rem!important;
+       margin-right: 0.6rem;
+       animation: appear 2s infinite;
+    }
+    &:nth-of-type(1){
+        margin-top: 2rem;
+        margin-bottom:1.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: $main__color;
+        font-size: 1.4rem;
+        text-shadow: 2px 1px 2px #000;
+    }
+    &:nth-of-type(6){
+        font-weight: bold;
+    }
+    &:nth-of-type(8){
+        text-align: center;
+        padding: 1rem;
+        margin: 3rem 15%;
+        border: 4mm ridge rgba(76, 175, 79, 0.8);
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
 }
 
+
+//bas de page//
+
 .footer{
-    background-color: $background;
+    background-color: $main__color;
     padding-bottom: 1rem;
     & .copyright{
         width:100%;
@@ -37,12 +121,23 @@ $background: #b1d2f3;
             height: auto;    
         }
         & a{
-            color: #ffee00;
+            color: rgb(238, 24, 209);
             text-shadow: 1px 1px 2px #000;
             text-decoration: none;
             &:hover{
             color: #f3e6db;
             }
+        }
+    }
+}
+
+@media all and (min-width: 850px){
+    .description_general {
+        margin-left: 13%;
+        margin-right: 13%;
+        & p:nth-of-type(6){
+            font-weight: bold;
+            text-align:center;
         }
     }
 }

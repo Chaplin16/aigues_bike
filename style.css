@@ -1,25 +1,147 @@
-.image {
-  height: 15rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: auto;
-  padding-bottom: 2rem;
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  75% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
-.entete p {
-  margin: 1rem 3rem;
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  75% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
-.entete p::first-letter {
-  margin-left: 2rem;
+@-webkit-keyframes appear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rotate {
+  -webkit-animation: rotate 8s infinite ease-in-out;
+          animation: rotate 8s infinite ease-in-out;
 }
 
 .backNav {
-  background-color: #b1d2f3;
+  background-color: #4caf4f;
+  font-weight: 700;
+}
+
+.phone {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 0.4rem;
+}
+
+.carousel {
+  width: 90% !important;
+  max-height: 20rem;
+  border: transparent;
+  margin: auto;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.btn_carousel {
+  color: #4caf4f !important;
+}
+
+.description_general p {
+  margin: 1.5rem 4rem;
+  text-align: justify;
+}
+
+.description_general p::first-letter {
+  margin-left: 2rem;
+}
+
+.description_general p .color {
+  color: #4caf4f;
+  margin-left: 4rem !important;
+  margin-right: 0.6rem;
+  -webkit-animation: appear 2s infinite;
+          animation: appear 2s infinite;
+}
+
+.description_general p:nth-of-type(1) {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #4caf4f;
+  font-size: 1.4rem;
+  text-shadow: 2px 1px 2px #000;
+}
+
+.description_general p:nth-of-type(6) {
+  font-weight: bold;
+}
+
+.description_general p:nth-of-type(8) {
+  text-align: center;
+  padding: 1rem;
+  margin: 3rem 15%;
+  border: 4mm ridge rgba(76, 175, 79, 0.8);
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 .footer {
-  background-color: #b1d2f3;
+  background-color: #4caf4f;
   padding-bottom: 1rem;
 }
 
@@ -59,12 +181,23 @@
 }
 
 .footer .director a {
-  color: #ffee00;
+  color: #ee18d1;
   text-shadow: 1px 1px 2px #000;
   text-decoration: none;
 }
 
 .footer .director a:hover {
   color: #f3e6db;
+}
+
+@media all and (min-width: 850px) {
+  .description_general {
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+  .description_general p:nth-of-type(6) {
+    font-weight: bold;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
