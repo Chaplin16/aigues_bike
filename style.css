@@ -96,8 +96,17 @@
      object-fit: cover;
 }
 
-.btn_carousel {
-  color: #4caf4f !important;
+.chevron_color {
+  background-color: #4caf4f;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  color: #000 !important;
+  opacity: 1 !important;
 }
 
 .description_general p {
@@ -124,7 +133,7 @@
   text-align: center;
   color: #4caf4f;
   font-size: 1.4rem;
-  text-shadow: 2px 1px 2px #000;
+  text-shadow: 1px 0px 1px #000;
 }
 
 .description_general p:nth-of-type(6) {
@@ -190,9 +199,66 @@
   color: #f3e6db;
 }
 
+.insert {
+  margin-top: 30%;
+  margin-bottom: 30rem;
+}
+
+.await {
+  text-align: center;
+  padding: 1rem;
+  margin: 3rem 15%;
+  border: 4mm ridge rgba(76, 175, 79, 0.8);
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imgShop {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hours {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.hours h1 {
+  color: #4caf4f;
+  margin-bottom: 2rem;
+}
+
+.map h2 {
+  color: #4caf4f;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
 @media all and (min-width: 700px) {
   .carousel {
     max-height: 30rem;
+  }
+  .imgShop {
+    width: 70%;
+    height: auto;
   }
 }
 
@@ -208,12 +274,32 @@
   .carousel {
     width: 85% !important;
   }
+  .info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 4rem;
+  }
+  .info .imgShop {
+    width: 30rem;
+    height: auto;
+  }
 }
 
 @media all and (min-width: 1250px) {
   .carousel {
     max-height: 35rem;
     width: 80%;
+  }
+  .info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 7rem;
+            column-gap: 7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
