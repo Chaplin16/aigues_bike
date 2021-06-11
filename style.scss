@@ -40,6 +40,18 @@ $main__color: rgb(76, 175, 79);
     font-weight: 700;
 }
 
+.navbar-nav{
+   column-gap: 2rem;
+}
+.nav-link{
+    font-size: 1.1rem;
+    color: #000!important;
+    &:hover{
+    color:#000!important;
+    text-shadow: 2px 3px 6px #fff;
+    }
+}
+
 .phone {
     background-color: #000;
     color: #fff;
