@@ -1,32 +1,51 @@
 const bike = [
     {
         id: 1,
-        alt: "vue interieure du magasin avec vélo et vélo electriques",
-        photo: "images/test1.jpg"
+        alt: "Vélo et vélo electriques en vente, boutique à Aigues-Mortes",
+        photo: "images/sale/boutique-vente-velo-aigues-mortes.jpg",
+        title: "La boutique",
+        description:""
     },
     {
         id: 2,
-        alt: "vue interieure du magasin avec velo à louer",
-        photo: "images/test2.jpg"
+        alt: "vente de vélo face aux remparts d'aigues-Mortes",
+        photo: "images/sale/vente-velo-aigues-mortes.jpg",
+        title: "Vélo à louer",
+        description:""
     },
     {
         id: 3,
-        alt: "vue interieure du magasin avec velo électriques",
-        photo: "images/test3.jpg"
+        alt: "vente de vélo et vélos en location à Aigues-Bike",
+        photo: "images/sale/aigues_mortes_velo_electrique.jpg",
+        title: "Vélo électrique",
+        description:""
     },
     {
         id: 4,
-        alt: "vue interieur du magasin avec quad",
-        photo: "images/test4.jpg"
+        alt: "quad, vélo et trottinette en vente ou en location à Aigues-Mortes",
+        photo: "images/sale/aigues_mortes_quad.jpg",
+        title: "Quad",
+        description:""
     },
     {
         id: 5,
-        alt: "vue interieur du magasin avec les accessoires pour vélo",
-        photo: "images/test5.jpg"
+        alt: "Accessoires pour vélo à Aigues-Mortes",
+        photo: "images/sale/aigues_mortes_velo_accessoire.jpg",
+        title: "Accessoires",
+        description:""
     },
     {
         id: 6,
-        alt: "vue extérieure du magasin",
-        photo: "images/test6.jpg"
-    }
+        alt: "vélo à vendre chez Aigues-Bike",
+        photo: "images/sale/vente-deux-roues-aigues-bike.jpg",
+        title: "Vélo à vendre",
+        description:""
+    },
+    {
+        id: 6,
+        alt: "Deux roues Aigues-Bike à Aigues-Mortes",
+        photo: "images/sale/deux-roues-motorises-aigues-mortes.jpg",
+        title: "Deux roues motorisés",
+        description:""
+    },
 ]
